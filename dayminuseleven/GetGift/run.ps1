@@ -23,7 +23,8 @@ if (-not $name) {
 
 if ($name) {
     $status = [HttpStatusCode]::OK
-    $body = "Hello $($Gifts.name)"
+
+    $body = $Gifts | Where-Object -Property 'Name' -eq $Name #| ConvertTo-Json
 }
 else {
     $status = [HttpStatusCode]::BadRequest

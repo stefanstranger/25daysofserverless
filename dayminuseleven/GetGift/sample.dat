@@ -1,3 +1,14 @@
-{
-    "name": "Xbox"
-}
+[
+  {
+    "Name": "Stefan",
+    "Gift": "Xbox"
+  },
+  {
+    "Name": "Stefan",
+    "Gift": "Surface Headphone"
+  },
+  {
+    "Name": "Esther",
+    "Gift": "SCRUM book"
+  }
+]

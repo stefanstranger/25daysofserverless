@@ -12,7 +12,7 @@ Write-Verbose ($TriggerMetadata | Convertto-Json) -Verbose
 Write-Verbose ('Request Object: {0}' -f ($request | convertto-json)) -Verbose
 
 #region read database file
-$Gifts = Get-Content -Path .\GetGift\sample.dat | ConvertFrom-Json
+$Gifts = Get-Content -Path .\sample.dat | ConvertFrom-Json
 #endregion
 
 # Interact with query parameters or the body of the request.

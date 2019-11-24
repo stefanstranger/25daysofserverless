@@ -28,8 +28,14 @@ cd .\dayminuseleven
 func start --build
 ```
 
-Open new PowerShell Host and type:
+Want to retrieve gifts list for Stefan? Type:
 
 ```PowerShell
 Invoke-RestMethod -Method Get -Uri 'http://localhost:7071/api/GetGift?Name=Stefan'
+```
+
+Want to create a new gift list for Stefan? Type:
+
+```PowerShell
+Invoke-RestMethod -Method Get -Uri 'http://localhost:7071/api/CreateGift?Name=Stefan&Gift=socks'
 ```
